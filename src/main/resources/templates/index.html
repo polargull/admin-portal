@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout">
+<head>
+    <title>登录页面</title>
+    <link th:href="@{/bootstrap/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+                <input type="text" class="form-control col-sm-12" placeholder="请输入账号名"/>
+                <input type="password" class="form-control col-sm-12" placeholder="请输入密码"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script th:src="@{/jquery/jquery-3.3.1.min.js}"></script>
+</body>
+</html>
