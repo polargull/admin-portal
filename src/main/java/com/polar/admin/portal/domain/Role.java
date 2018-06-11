@@ -7,24 +7,17 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
- * Created by fuyuanpu on 2018/6/3.
+ * Created by fuwei on 2018/6/11.
  */
 @Data
 @Entity
-public class User {
+public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String name;
-    String pwd;
-    String realName;
-    String contact;
-    String email;
-    int status;
-    @ManyToOne
-    Org org;
     @ManyToMany
-    List<Role> role;
+    List<Resource> resource;
     LocalDateTime createTime;
     LocalDateTime updateTime;
 }
